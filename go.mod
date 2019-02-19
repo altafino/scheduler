@@ -1,4 +1,4 @@
-module github.com/rakanalh/scheduler
+module github.com/Gee5ive/scheduler
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
