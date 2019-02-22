@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/rakanalh/scheduler"
-	"github.com/rakanalh/scheduler/storage"
+	"github.com/jc01rho/scheduler"
+	"github.com/jc01rho/scheduler/storage"
 )
 
 type Gender int

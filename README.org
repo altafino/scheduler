@@ -1,5 +1,5 @@
 * Go Task Scheduler
-[[https://travis-ci.org/rakanalh/scheduler][https://img.shields.io/travis/rakanalh/scheduler/master.svg?style=flat-square]] [[http://codecov.io/github/rakanalh/scheduler?branch=master][http://codecov.io/github/rakanalh/scheduler/coverage.svg?branch=master]] [[https://godoc.org/github.com/rakanalh/scheduler][https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square]] [[https://github.com/rakanalh/scheduler/blob/master/LICENSE.txt][https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square]]
+[[https://travis-ci.org/jc01rho/scheduler][https://img.shields.io/travis/jc01rho/scheduler/master.svg?style=flat-square]] [[http://codecov.io/github/jc01rho/scheduler?branch=master][http://codecov.io/github/jc01rho/scheduler/coverage.svg?branch=master]] [[https://godoc.org/github.com/jc01rho/scheduler][https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square]] [[https://github.com/jc01rho/scheduler/blob/master/LICENSE.txt][https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square]]
 
 
 
@@ -15,7 +15,7 @@ during down-time as well as maintaining a history of the callbacks that got exec
 
 * Installation
 #+BEGIN_SRC shell
-go get github.com/rakanalh/scheduler
+go get github.com/jc01rho/scheduler
 #+END_SRC
 
 * How To Use
@@ -80,7 +80,7 @@ taskID := s.RunEvery(1 * time.Minute, MyFunc, "Hello", "World")
 
 * Examples
 
-The [[https://github.com/rakanalh/scheduler/tree/master/_example/][Examples]] folder contains a bunch of code samples you can look into.
+The [[https://github.com/jc01rho/scheduler/tree/master/_example/][Examples]] folder contains a bunch of code samples you can look into.
 
 * Custom Storage
 
