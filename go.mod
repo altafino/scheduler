@@ -5,7 +5,9 @@ require (
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/lib/pq v1.0.0
 	github.com/mattn/go-sqlite3 v1.10.0
-	github.com/mongodb/mongo-go-driver v1.0.0-rc1
+    go.mongodb.org/mongo-driver/mongo/options v1.0.0-rc1
+    go.mongodb.org/mongo-driver/mongo v1.0.0-rc1
+    go.mongodb.org/mongo-driver/x/bsonx v1.0.0-rc1
 	github.com/stretchr/testify v1.3.0
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
 	github.com/xdg/stringprep v1.0.0 // indirect
