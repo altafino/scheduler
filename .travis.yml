@@ -1,7 +1,7 @@
 language: go
 services: mongodb
 before_install:
-  - go get github.com/jc01rho/scheduler
+  - go get github.com/altafino/scheduler
 script:
   # Run the unit tests suite
   - bash ./test.sh

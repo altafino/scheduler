@@ -11,8 +11,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/jc01rho/scheduler/storage"
-	"github.com/jc01rho/scheduler/task"
+	"github.com/altafino/scheduler/storage"
+	"github.com/altafino/scheduler/task"
 )
 
 // Scheduler is used to schedule tasks. It holds information about those tasks

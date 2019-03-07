@@ -6,10 +6,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"
 
-	"github.com/mongodb/mongo-go-driver/mongo"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/x/bsonx"
 )
 
 const COLLECTION_NAME string = "task_store"
@@ -37,7 +38,7 @@ func NewMongoDBStorage(config MongoDBConfig) *MongoDBStorage {
 func (mongodb *MongoDBStorage) Connect() error {
 	var client *mongo.Client
 
-	client, err := mongo.NewClient(mongodb.config.ConnectionUrl)
+	client, err := mongo.NewClient(options.Client().ApplyURI(mongodb.config.ConnectionUrl))
 	if err != nil {
 		return err
 	}
@@ -76,7 +77,7 @@ func (mongodb MongoDBStorage) Add(task TaskAttributes) error {
 
 	// filter := bson.NewDocument(bson.EC.String("hash", task.Hash))
 	filter := bsonx.Doc{{"hash", bsonx.String(task.Hash)}}
-	res, err := task_store.Count(context.Background(), filter)
+	res, err := task_store.CountDocuments(context.Background(), filter)
 
 	if err != nil {
 		return errors.New(fmt.Sprintf("%v", err))

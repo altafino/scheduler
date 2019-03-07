@@ -1,5 +1,5 @@
 * Go Task Scheduler
-[[https://travis-ci.org/jc01rho/scheduler][https://img.shields.io/travis/jc01rho/scheduler/master.svg?style=flat-square]] [[http://codecov.io/github/jc01rho/scheduler?branch=master][http://codecov.io/github/jc01rho/scheduler/coverage.svg?branch=master]] [[https://godoc.org/github.com/jc01rho/scheduler][https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square]] [[https://github.com/jc01rho/scheduler/blob/master/LICENSE.txt][https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square]]
+[[https://travis-ci.org/altafino/scheduler][https://img.shields.io/travis/altafino/scheduler/master.svg?style=flat-square]] [[http://codecov.io/github/altafino/scheduler?branch=master][http://codecov.io/github/altafino/scheduler/coverage.svg?branch=master]] [[https://godoc.org/github.com/altafino/scheduler][https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square]] [[https://github.com/altafino/scheduler/blob/master/LICENSE.txt][https://img.shields.io/badge/License-MIT-orange.svg?style=flat-square]]
 
 
 
@@ -15,7 +15,7 @@ during down-time as well as maintaining a history of the callbacks that got exec
 
 * Installation
 #+BEGIN_SRC shell
-go get github.com/jc01rho/scheduler
+go get github.com/altafino/scheduler
 #+END_SRC
 
 * How To Use
@@ -80,7 +80,7 @@ taskID := s.RunEvery(1 * time.Minute, MyFunc, "Hello", "World")
 
 * Examples
 
-The [[https://github.com/jc01rho/scheduler/tree/master/_example/][Examples]] folder contains a bunch of code samples you can look into.
+The [[https://github.com/altafino/scheduler/tree/master/_example/][Examples]] folder contains a bunch of code samples you can look into.
 
 * Custom Storage
 

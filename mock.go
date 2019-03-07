@@ -3,7 +3,7 @@ package scheduler
 import (
 	"fmt"
 
-	"github.com/jc01rho/scheduler/storage"
+	"github.com/altafino/scheduler/storage"
 )
 
 type failureMode int
@@ -69,7 +69,7 @@ func (s *storeMock) Fetch() ([]storage.TaskAttributes, error) {
 	if s.Mode == failOnFuncMeta {
 		taskAttributes.Name = "NonExistentName"
 	} else {
-		taskAttributes.Name = "github.com/jc01rho/scheduler.mockFunction"
+		taskAttributes.Name = "github.com/altafino/scheduler.mockFunction"
 	}
 
 	if s.Mode == failOnEmptyParams {
